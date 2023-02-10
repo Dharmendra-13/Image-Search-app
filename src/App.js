@@ -1,4 +1,4 @@
-import React,{ useState,useEffect } from "react";
+import React,{ useState } from "react";
 import axios from "axios";
 
 
@@ -28,9 +28,9 @@ function App() {
           {result.map((value)=>{
             return(
               <div className="col-lg-3 col-md-4 col-6" key={value.id}>
-              <a href="#" className="d-block mb-4 h-100">
-                <img className="img-fluid img-thumbnail"  src={value.urls.small} />
-              </a>
+              <div className="d-block mb-4 h-100"> 
+                <img className="img-fluid img-thumbnail"  src={value.urls.small} alt="hello world" />
+              </div>
             </div>
             );
           })}

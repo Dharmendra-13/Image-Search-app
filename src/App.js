@@ -27,9 +27,9 @@ function App() {
 
           {result.map((value)=>{
             return(
-              <div className="col-lg-3 col-md-4 col-6">
+              <div className="col-lg-3 col-md-4 col-6" key={value.id}>
               <a href="#" className="d-block mb-4 h-100">
-                <img className="img-fluid img-thumbnail" src={value.urls.small} />
+                <img className="img-fluid img-thumbnail"  src={value.urls.small} />
               </a>
             </div>
             );
